@@ -1,3 +1,6 @@
+> [!WARNING]
+> **🚧 WIP — Active Semantic Turn-Taking & Endpointing Pipeline Calibration in Progress.**
+
 # FastTurn 0.1.0 [ALPHA] — Adaptive Semantic Endpointing & Turn-Taking Engine for Java
 
 [![Status](https://img.shields.io/badge/status-0.1.0-brightgreen.svg)](https://github.com/andrestubbe/FastTurn/releases/tag/0.1.0)
