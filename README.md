@@ -15,6 +15,8 @@
 
 **FastTurn** bridges acoustic voice activity detection (**[FastVAD](https://github.com/andrestubbe/FastVAD)**) and streaming speech recognition (**[FastSTT](https://github.com/andrestubbe/FastSTT)**). It solves the fundamental voice-agent dilemma ("when to start talking") by replacing rigid silence timers with dynamic semantic heuristics that give users time to think during mid-sentence pauses while answering finished sentences in under 250 milliseconds.
 
+Watch Demo (YouTube) | Watch JMH Benchmark (YouTube)
+
 ---
 
 ## Quick Start
