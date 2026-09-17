@@ -82,6 +82,15 @@ Standard voice agents rely solely on acoustic silence duration to decide when th
 - **Sub-Millisecond Four-State Machine**: Manages transitions between `LISTENING`, `USER_SPEAKING`, `COUNTING_SILENCE`, and `AGENT_REPLYING` in < 1 µs.
 - **Zero-Allocation Hot Path**: Operates with zero GC churn during continuous 24/7 microphone event streams.
 
+| Feature | Fixed Silence Timer (WebRTC) | Cloud Agent Endpointing | FastTurn |
+|:---|:---|:---|:---|
+| **Turn Detection Method** | Fixed threshold (e.g. 500ms)| Remote LLM/VAD stream | **Adaptive Semantic Endpointing** |
+| **Mid-Sentence Hesitation**| Interrupts user during pauses| Variable cloud latency | **Patient Mode (Scales to 1,200 ms)**|
+| **Confirmation Latency** | 500–1,200 ms fixed drag | 400–800 ms network lag | **< 250 ms (Instant Sentence End)** |
+| **State Machine Latency** | Ad-hoc callback flags | Network roundtrips | **< 1 µs (> 33M cycles/s in JMH)** |
+| **Barge-In Coordination** | Separate custom logic | Delayed cancellation | **Integrated FastTTS / FastVAD Kill** |
+| **Dependencies** | JDK standard lib | Cloud vendor SDKs | **Pure Java 17+ backed by FastCore** |
+
 ---
 
 ## Features
