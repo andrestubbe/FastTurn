@@ -217,12 +217,15 @@ MIT License — See [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-Combine FastTurn with other FastJava voice accelerators:
-
-* [**FastVAD**](https://github.com/andrestubbe/FastVAD) — Ultra-fast real-time voice activity detection (Silero-ONNX & WebRTC).
-* [**FastSTT**](https://github.com/andrestubbe/FastSTT) — High-throughput streaming speech-to-text recognition.
-* [**FastTTS**](https://github.com/andrestubbe/FastTTS) — Low-latency streaming text-to-speech synthesis.
-* [**FastAIAgent**](https://github.com/andrestubbe/FastAIAgent) — Autonomous multi-agent orchestration.
+- [FastCore](https://github.com/andrestubbe/FastCore) — Native library loader, FFM gateway, and platform abstraction
+- [FastAudioCapture](https://github.com/andrestubbe/FastAudioCapture) — Zero-copy WASAPI audio loopback & microphone capture
+- [FastAudioPlayer](https://github.com/andrestubbe/FastAudioPlayer) — Ultra low-latency WASAPI and DirectSound audio playback engine
+- [FastAudioProcess](https://github.com/andrestubbe/FastAudioProcess) — Zero-allocation audio DSP, resamplers, and format converters
+- [FastVAD](https://github.com/andrestubbe/FastVAD) — Ultra-fast real-time Voice Activity Detection (Silero-ONNX & WebRTC)
+- [FastTTS](https://github.com/andrestubbe/FastTTS) — Unified, zero-bloat text-to-speech backend orchestration
+- [FastSSML](https://github.com/andrestubbe/FastSSML) — High-performance SSML parsing and speech synthesis markup
+- [FastSTT](https://github.com/andrestubbe/FastSTT) — High-throughput local speech-to-text recognition
+- [FastWakeWord](https://github.com/andrestubbe/FastWakeWord) — Neural wake-word and keyword spotting detector
 
 ---
 
